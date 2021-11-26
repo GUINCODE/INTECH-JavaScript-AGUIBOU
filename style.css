@@ -1,0 +1,131 @@
+/* global */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #454550;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    margin: 100px;
+}
+
+select {
+    border: none;
+    padding: 3;
+    background: #70706f70;
+    border-radius: 4px;
+}
+
+option {
+    padding: 4px 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* titre   */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    margin-left: 10px;
+    padding: 3px;
+    background: rgba(40, 78, 40, 0.274);
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgba(70, 109, 70, 0.274);
+}
+
+/* headd  */
+.headd {
+    display: flex;
+    flex-direction: row;
+}
+
+.timerZone {
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+}
+
+/* result */
+.result {
+   margin-left: 50px;
+    font-size: 30px;
+}
+
+/* zone de  mine  */
+.field {
+    background: #888888;
+}
+
+.field .cell {
+    width: 30px;
+    height: 30px;
+    background: #aaafaa;
+    cursor: pointer;
+    border-left: solid 1px #666666;
+    border-top: solid 1px #666666;
+    border-right: solid 1px #aaaaaa;
+    border-bottom: solid 1px #aaaaaa;
+}
+
+.field .cell:hover {
+    background: #575857;
+}
+
+.field .cell.bomb {
+    background: #cc3333;
+    cursor: default;
+}
+
+.field .cell.bomb:hover {
+    background: #742828;
+}
+
+.field .cell.clear {
+    background: white;
+    cursor: default;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.field .cell.clear:hover {
+    background: none;
+}
+
+.field .cell.marked {
+    background: #68686e;
+    color: rgb(223, 21, 21);
+    font-weight: bold;
+    text-align: center;
+    /* content: "!"; */
+}
+
+.field .cell.marked:hover {
+    background: #886530;
+}
+
+.seconds, .time {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.points {
+    font-weight: bold;
+    font-size: 20px;
+}

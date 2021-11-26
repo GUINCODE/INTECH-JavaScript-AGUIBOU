@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Demineur</title>
+<meta charset="UTF-8" />
+<script src="demineur.js" defer></script>
+
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page">
+        <h1>
+            D&eacute;mineur
+        </h1>
+        <div>
+          &nbsp;
+        </div>
+        <div class="headd">
+           
+            <select name="" class="niveau" onchange="onChangeLevel()">
+                <option value="facile">Facile</option>
+                <option value="normal">Normal</option>
+                <option value="dificile">Difficile</option>
+                <option value="extreme">Extrème</option>
+            </select> 
+            <button class="reprendreBTN">Reprendre</button>
+        
+        </div>
+        <div>
+            &nbsp;
+        </div>
+          <div class="timerZone">
+              <span><strong class="time">00</strong> <span class="points">:</span> <strong class="seconds">00</strong></span>
+              <button class="btn_pause hidden">Pause</button> 
+              <button class="btn_play hidden">Play</button>
+          </div>
+        <div>
+            &nbsp;
+        </div>
+        <div class="game plateau" >
+
+
+        </div>
+        <div class="options">
+<div>
+    &nbsp;
+</div>
+<div id="result" class="result">
+
+</div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
